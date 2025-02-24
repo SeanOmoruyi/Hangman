@@ -25,6 +25,11 @@ def hangman_game():
             print("Wrong guess!")
         attempts -= 1
         guessed.add(guess)
+    
+    if "_" not in display_word:
+       print("\nCongratulations! You guessed the word:", word)
+    else:
+       print("\nGame over! The word was:", word)
 
 
 
