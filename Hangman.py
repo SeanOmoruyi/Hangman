@@ -19,3 +19,6 @@ def hangman_game():
         for i, letter in enumerate(word):
             if letter == guess:
                 display_word[i] = guess
+        guessed.add(guess)
+    else:
+        
