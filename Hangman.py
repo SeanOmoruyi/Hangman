@@ -16,3 +16,6 @@ def hangman_game():
         print("You already guessed that letter")
     elif guess in word:
         print("Correct guess!")
+        for i, letter in enumerate(word):
+            if letter == guess:
+                display_word[i] = guess
