@@ -31,6 +31,9 @@ def hangman_game():
     else:
        print("\nGame over! The word was:", word)
 
+if __name__ == "__main__":
+   hangman_game()
+
 
 
 
