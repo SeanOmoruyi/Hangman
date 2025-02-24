@@ -10,4 +10,9 @@ def hangman_game():
     while attempts > 0 and "_" in display_word:
         print("\nWord:", " ".join(display_word))
         print(f"Attempts remaining: {attempts}")
-        
+        guess = input("Guess a letter: ").lower()
+
+    if guess in guessed:
+        print("You already guessed that letter")
+    elif guess in word:
+        print("Correct guess!")
