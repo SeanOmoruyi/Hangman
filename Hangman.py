@@ -17,15 +17,15 @@ def hangman_game():
         
         elif guess in word:
            print("Correct guess!")
-            for i, letter in enumerate(word):
-                if letter == guess:
-                    display_word[i] = guess
+           for i, letter in enumerate(word):
+            if letter == guess:
+               display_word[i] = guess
             guessed.add(guess)
         else:
             print("Wrong guess!")
         attempts -= 1
         guessed.add(guess)
-        
+
 
 
 
