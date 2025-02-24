@@ -7,4 +7,7 @@ def hangman_game():
     attempts = 7
     display_word = ["_" for _ in word]
 
-    
+    while attempts > 0 and "_" in display_word:
+        print("\nWord:", " ".join(display_word))
+        print(f"Attempts remaining: {attempts}")
+        
