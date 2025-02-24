@@ -13,19 +13,19 @@ def hangman_game():
         guess = input("Guess a letter: ").lower()
         
         if guess in guessed:
-        print("You already guessed that letter")
+            print("You already guessed that letter")
         
         elif guess in word:
-        print("Correct guess!")
-        for i, letter in enumerate(word):
-            if letter == guess:
-                display_word[i] = guess
-        guessed.add(guess)
-        
+           print("Correct guess!")
+            for i, letter in enumerate(word):
+                if letter == guess:
+                    display_word[i] = guess
+            guessed.add(guess)
         else:
-        print("Wrong guess!")
+            print("Wrong guess!")
         attempts -= 1
         guessed.add(guess)
+        
 
 
 
