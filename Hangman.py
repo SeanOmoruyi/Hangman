@@ -21,4 +21,8 @@ def hangman_game():
                 display_word[i] = guess
         guessed.add(guess)
     else:
-        
+        print("Wrong guess!")
+        attempts -= 1
+        guessed.add(guess)
+    
+
