@@ -11,18 +11,21 @@ def hangman_game():
         print("\nWord:", " ".join(display_word))
         print(f"Attempts remaining: {attempts}")
         guess = input("Guess a letter: ").lower()
-
-    if guess in guessed:
+        
+        if guess in guessed:
         print("You already guessed that letter")
-    elif guess in word:
+        
+        elif guess in word:
         print("Correct guess!")
         for i, letter in enumerate(word):
             if letter == guess:
                 display_word[i] = guess
         guessed.add(guess)
-    else:
+        
+        else:
         print("Wrong guess!")
         attempts -= 1
         guessed.add(guess)
-    
+
+
 
